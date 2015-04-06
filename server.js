@@ -27,4 +27,4 @@ io.sockets.on('connection', function(socket) {
     socket.on('i am client', console.log);
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
