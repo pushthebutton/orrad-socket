@@ -43,8 +43,8 @@ io.on('connection', function(socket){
         console.log("the boss of " +createdRoom + " is " + socket.id);
         socket.orradRoom = createdRoom;
         io.emit('roomCreated', createdRoom);
-        console.log("room created " + createdRoom);
-        console.log("room index " + rooms.indexOf(createdRoom));
+//        console.log("room created " + createdRoom);
+//        console.log("room index " + rooms.indexOf(createdRoom));
         if(rooms.indexOf(createdRoom) != -1){
             socket.emit("roomExists");
             return false;
